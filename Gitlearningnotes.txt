@@ -45,3 +45,8 @@ $ rm test.txt
 #从版本库删除文件
 $ git rm test.txt
 $ git commit -m "remove test.txt"
+
+#在leargit仓库下
+$ git remote add origin git@github.com:edwardyanxin/learngit.git
+$ git push -u origin master  #第一次使用-u
+$ git push origin master     #后面使用
