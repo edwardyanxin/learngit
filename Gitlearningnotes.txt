@@ -1,0 +1,35 @@
+$ git config --global user.name "edwardyanxin"
+
+$ git config --global user.email "yanxin13@mails.ucas.ac.cn"
+
+#创建一个版本库，pwd命令用于显示当前目录
+$ mkdir learngit
+$ cd learngit
+$ pwd
+
+#通过git init命令把这个目录变成Git可以管理的仓库
+$ git init
+$ git add readme.txt
+$ git add file2.txt file3.txt
+$ git commit -m "add 3 files "
+
+#掌握仓库当前的状态
+$ git status 
+
+# 看看具体内容修改
+$ git diff readme.txt 
+
+#查看提交历史
+$ git log
+$ git log --pretty=oneline
+
+#回溯版本 HEAD  HEAD^ HEAD^^ HEAD~100
+$ git reset --hard HEAD^
+$ git reset --hard 1094a
+
+#查看当前内容
+$ cat readme.txt
+
+#查看命令历史id
+$ git reflog
+
